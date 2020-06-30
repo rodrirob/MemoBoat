@@ -1,0 +1,186 @@
+
+#body {
+  color: white;
+  font-family: 'Montserrat', Courier;
+}
+
+
+#title {
+  background-color: #52288C;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+   font-family: 'Montserrat', Georgia;
+   font-size: 3.5rem;
+   font-weight: 900;
+   line-height: 1.5;
+   color: white;
+}
+
+h2 {
+  font-family: 'Montserrat', Georgia;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5 rem;
+}
+h3 {
+  font-family: 'Montserrat', Georgia;
+  font-weight: bold;
+  color: white; 
+  font-weight: bold; 
+  padding: 5% 5%; 
+  font-size: 2.5rem; 
+  line-height: 1.5;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-title {
+  color: white;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+ 
+}
+
+.nav-item {
+  padding: 0 18px;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: bold;
+}
+
+/* Download Button */
+
+.outer_window {
+  background-color: #52288C;
+}
+
+/*Logo Animation Properties*/
+@keyframes float {
+	0% {
+		
+    transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+	
+    transform: translatey(0px);
+	}
+}
+
+/* Title images */
+.title-image {
+  width: 800px;
+  transform: rotate(-25deg);
+  position: absolute;
+  right: -70%;
+  top: -30%;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Window Border */
+.center_Window {
+  margin: auto;
+  width: 70%;
+}
+
+
+#footer {
+  text-align: center;
+  padding: 7% 7%;
+}
+
+
+.copyright {
+  font-size: 20px;
+}
+
+.nav_top {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-navbtn {
+  padding: 5px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  width: 60%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.login_text {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.btm-text {
+  position: relative;
+  left: 60%;
+}

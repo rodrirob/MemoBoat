@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+
+
+
+
+<head>
+
+
+
+  <meta charset="utf-8">
+
+
+
+  <title>Memo-Boat</title>
+
+
+
+
+
+
+
+  <!-- Bootstrap CSS StyleSheets -->
+
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+
+
+
+<!-- This are only for testing -->
+
+
+
+
+
+
+
+   
+
+
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+
+
+
+    
+
+
+
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.706.0.min.js"></script>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript and JQuery Scripts -->
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Font Awesome -->
+
+
+
+  <script src="https://kit.fontawesome.com/20a2aa87d8.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Local CSS StyleSheet -->
+
+
+
+  <link rel="stylesheet" href="styles.css">
+
+
+
+
+
+
+
+  <!-- Google Fonts -->
+
+
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="outer_window">
+
+
+
+  <!-- Navigation Bar -->
+
+
+
+    <!-- Navigation Bar -->
+
+
+
+            <div class="nav_top">
+
+
+
+            <nav class="navbar navbar-expand-lg navbar-light ">
+
+
+
+              <a class="nav-home" href="index.html">Memo Boat</a>
+
+
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+
+                <span class="navbar-toggler-icon"></span>
+
+
+
+              </button>
+
+
+
+            
+
+
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+                <ul class="navbar-nav mr-auto">
+
+
+
+                  <li class="nav-item">
+
+
+
+                    <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+
+
+
+                  </li>
+
+
+
+                  <li class="nav-item">
+
+
+
+                    <a class="nav-link" href="aboutus.html">About</a>
+
+
+
+                  </li>
+
+
+
+                  <li class="nav-item">
+
+
+
+                    <a class="nav-link" href="contact.html">Contact</a>
+
+
+
+                  </li>
+
+
+
+                  <li class="nav-item">
+
+
+
+                    <a class="nav-link" href="student.html">Student</a>
+
+
+
+                  </li>
+
+
+
+                  <li class="nav-item">
+
+
+
+                    <a class="nav-link" href="admin.html">Professor</a>
+
+
+
+                  </li>
+
+
+
+                </ul>
+
+
+
+                <div class="navbar-navbtn">
+
+
+
+                <a class="acc btn btn-light" href="#loginsection">Log-out</a>
+
+
+
+                <a class="acc btn btn-light" onclick="location.href = 'https://www.memoboat.tk/register.html';">Create Account</a>
+
+
+
+               </div>
+
+
+
+              </div>
+
+
+
+            </nav>
+
+
+
+          </div>
+
+
+
+<div class="center_Window">
+
+
+
+  <section id="title">
+
+
+
+    <div class="container-fluid">
+
+
+
+      
+
+
+
+      <!-- Title -->
+
+
+
+      <div class="row">
+
+
+
+
+
+
+
+        <div class="col-lg-6 col-md-12 col-sm-4">
+
+
+
+          <h2 style="color: white; font-weight: bold; padding: 5% 5%; font-size: 2.5rem; line-height: 1.5;">Student Access Page</h3>                
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 ml-auto">
+
+
+
+          <img class="title-image" src="Logo.png" alt="iphone-mockup">
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+                
+
+
+
+                
+
+
+
+                
+
+
+
+     <!-- This is only for testing 6/27/2020-->           
+
+
+
+<h1>Submit your Reports!!</h1>
+
+
+
+<div id="student">
+
+
+
+    
+
+
+
+</div>
+
+
+
+<h1>New Report Entry</h1>
+
+
+
+
+
+
+
+<form>
+
+
+
+    <label for="msg">Report Entry:</label>
+
+
+
+    <textarea id="msg" rows="4" cols="50"></textarea>
+
+
+
+    <button id='submitButton'>Submit Report</button>
+
+
+
+    </form>
+
+
+
+    
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+
+
+
+
+
+<script type="javascript">
+
+
+
+    
+
+
+
+    var API_URL= 'https://reuxarkrva.execute-api.us-east-1.amazonaws.com/prod/student';
+
+
+
+    
+
+
+
+    $(document).ready(function(){
+
+
+
+        $.ajax({
+
+
+
+            type:'GET',
+
+
+
+            url: API_URL,
+
+
+
+            
+
+
+
+            success: function(data){
+
+
+
+                $('#student').html('');
+
+
+
+                
+
+
+
+                data.Items.forEach(function(reportInsert){
+
+
+
+                    $('#student').append('<p>' + reportInsert.message + '</p>');
+
+
+
+                    
+
+
+
+                })
+
+
+
+            }
+
+
+
+        });
+
+
+
+    });
+
+
+
+    
+
+
+
+    $('#submitButton').on('click', function(){
+
+
+
+        $.ajax({
+
+
+
+            type:'POST',
+
+
+
+            url: API_URL,
+
+
+
+            data: JSON.stringify({"message": $('#msg').val()}),
+
+
+
+            contentType: "application/json",
+
+
+
+            
+
+
+
+            success: function(data){
+
+
+
+                location.reload();
+
+
+
+            }
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+
+    });
+
+
+
+return false;
+
+
+
+
+
+
+
+    });
+
+
+
+    
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <script src="aws-cognito-sdk.min.js"></script>
+
+
+
+    <script src="amazon-cognito-identity.min.js"></script>
+
+
+
+    <script src="cognito.js"></script>
+
+
+
+    <script src="cognito-auth.js"></script>
+
+
+
+    <script src="student.js"></script>
+
+
+
+    <script src="aws-sdk.min.js"></script>
+
+
+
+    <script src="aws-sdk.js"></script>
+
+
+
+    <script src="apitest.js"></script>
+
+
+
+    
+
+
+
+<!-- This are only for testing -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+
+
+
+
+
+
+  <footer id="footer">
+
+
+
+    <i class="fab fa-twitter fa-2x"></i>
+
+
+
+    <i class="fab fa-facebook fa-2x"></i>
+
+
+
+    <i class="fab fa-instagram fa-2x"></i>
+
+
+
+    <i class="fas fa-envelope fa-2x"></i>
+
+
+
+    <p class="copyright">© Copyright 2020 Memo-Boat</p>
+
+
+
+  </footer>
+
+
+
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
